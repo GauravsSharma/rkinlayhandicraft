@@ -43,7 +43,7 @@ Hello RK Inlay, I am inquiring about commissioning this piece with the exact spe
   const whatsappInquiryUrl = `https://wa.me/917351586553?text=${encodeURIComponent(whatsappInquiryMessage)}`;
 
   return (
-    <section className="w-full bg-surface py-6 sm:py-10 lg:py-16 pb-24 lg:pb-16">
+    <section className="w-full bg-surface py-6 sm:py-10 lg:py-16">
       <div className="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-start">
           {/* ================= LEFT COLUMN: IMAGERY & CERTIFICATION ================= */}
@@ -363,64 +363,14 @@ Hello RK Inlay, I am inquiring about commissioning this piece with the exact spe
                   </span>
                 </a>
 
-                <a
-                  href={`mailto:akhan656500@gmail.com?subject=CAD%20Specification%20Request%20-%20${encodeURIComponent(item.title)}&body=Hello%20RK%20Inlay%2C%0A%0APlease%20provide%20the%20architectural%20CAD%20(.DWG)%20spec%20sheet%20and%20finish%20samples%20for%20${encodeURIComponent(item.title)}%20(${item.archiveRecord}).%0AImage%20Reference%3A%20${encodeURIComponent(fullImageUrl)}`}
-                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 sm:py-3.5 rounded-full bg-surface-container-high border border-surface-container-highest text-primary hover:bg-surface-container-highest transition-colors duration-200 font-label-caps text-[10px] sm:text-[11px] tracking-wider uppercase font-semibold text-center"
-                >
-                  <span className="material-symbols-outlined text-[16px] text-secondary">
-                    download
-                  </span>
-                  <span>Request Architectural Spec Sheet &amp; CAD (.DWG)</span>
-                </a>
+               
               </div>
 
               {/* Direct Concierge Line */}
-              <p className="font-body-sm text-[11px] sm:text-xs text-on-surface-variant text-center">
-                Direct Master Carver Concierge:{" "}
-                <a href="tel:+917351586553" className="text-primary font-bold hover:underline">
-                  +91 7351586553
-                </a>{" "}
-                •{" "}
-                <a href="mailto:akhan656500@gmail.com" className="text-secondary font-bold hover:underline">
-                  akhan656500@gmail.com
-                </a>
-              </p>
+              
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Floating Bottom Quick Inquiry Bar for Mobile */}
-      <div className="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-surface/95 backdrop-blur-lg border-t border-surface-container-highest px-4 py-2.5 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] flex items-center justify-between gap-3">
-        <div className="min-w-0 flex-1">
-          <span className="font-serif text-base font-bold text-primary block leading-tight truncate">
-            {item.price}
-          </span>
-          <span className="font-label-caps text-[9px] uppercase tracking-wider text-secondary font-semibold block truncate">
-            {item.title}
-          </span>
-        </div>
-
-        <a
-          href={whatsappInquiryUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-primary text-on-primary hover:bg-secondary transition-colors text-xs font-label-caps tracking-wider uppercase font-bold shrink-0 shadow-sm"
-        >
-          <svg
-            className="w-3.5 h-3.5 fill-current shrink-0"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2ZM12.04 3.67C14.24 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.16 12.04 20.16C10.67 20.16 9.32 19.8 8.14 19.11L7.86 18.94L4.74 19.76L5.57 16.72L5.38 16.42C4.62 15.21 4.22 13.82 4.22 11.91C4.22 7.37 7.92 3.67 12.04 3.67ZM16.57 14.28C16.32 14.16 15.1 13.56 14.87 13.48C14.65 13.4 14.48 13.36 14.32 13.6C14.16 13.85 13.69 14.4 13.54 14.56C13.4 14.73 13.25 14.75 13 14.63C12.75 14.5 11.97 14.25 11.04 13.42C10.32 12.78 9.83 11.98 9.69 11.73C9.55 11.49 9.68 11.35 9.8 11.23C9.91 11.12 10.05 10.94 10.17 10.8C10.3 10.65 10.34 10.55 10.42 10.39C10.5 10.22 10.46 10.08 10.4 9.96C10.34 9.83 9.85 8.63 9.64 8.13C9.44 7.64 9.24 7.71 9.09 7.7C8.95 7.69 8.78 7.69 8.62 7.69C8.45 7.69 8.18 7.75 7.95 8C7.73 8.25 7.09 8.84 7.09 10.06C7.09 11.27 7.98 12.44 8.1 12.6C8.22 12.77 9.83 15.25 12.3 16.31C12.89 16.56 13.34 16.71 13.7 16.83C14.29 17.02 14.83 16.99 15.26 16.93C15.74 16.86 16.74 16.32 16.95 15.73C17.15 15.15 17.15 14.65 17.09 14.55C17.03 14.44 16.88 14.38 16.57 14.28Z"
-            />
-          </svg>
-          <span>Enquire</span>
-        </a>
       </div>
     </section>
   );
