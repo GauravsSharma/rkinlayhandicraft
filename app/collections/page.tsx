@@ -15,9 +15,9 @@ export const metadata: Metadata = {
 
 export default function CollectionsPage() {
   return (
-    <div className="bg-surface text-on-surface min-h-screen flex flex-col">
+    <div className="bg-surface text-on-surface min-h-screen flex flex-col w-full max-w-full overflow-x-hidden">
       <Header />
-      <main className="w-full pt-20 bg-surface min-h-[calc(100vh-80px)] flex-1">
+      <main className="w-full max-w-full overflow-x-hidden pt-20 bg-surface min-h-[calc(100vh-80px)] flex-1">
         <CollectionsHeroSection />
         <CollectionsFilterGrid />
         <SacredSanctuariesSection />

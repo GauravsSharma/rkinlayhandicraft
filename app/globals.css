@@ -64,9 +64,23 @@
 }
 
 @layer base {
-  html, body {
+  html {
     margin: 0;
     padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
     background-color: #fcf9f2;
     color: #1c1c18;
     font-family: var(--font-jakarta), "Plus Jakarta Sans", sans-serif;

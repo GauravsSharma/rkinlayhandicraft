@@ -7,7 +7,7 @@ import { IMAGES, EXCELLENCE_POINTS } from "@/data/content";
 
 export default function WhyRkInlaySection() {
   return (
-    <section className="w-full bg-surface py-space-xl lg:py-28">
+    <section className="w-full bg-surface py-space-xl lg:py-28 overflow-hidden">
       <div className="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
           {/* Visual feature with artisan at work */}

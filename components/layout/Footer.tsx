@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="relative w-full bg-primary text-inverse-on-surface overflow-hidden pt-space-xl pb-space-lg border-t border-white/5">
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-center select-none overflow-hidden opacity-[0.04] sm:opacity-[0.05]">
-        <span className="font-serif text-[12vw] sm:text-[14vw] lg:text-[16vw] font-semibold leading-none tracking-wider uppercase whitespace-nowrap text-white">
+      <div className="pointer-events-none absolute inset-x-0 bottom-2 sm:bottom-0 flex justify-center select-none overflow-hidden">
+        <span className="font-serif text-[18vw] sm:text-[14vw] lg:text-[16vw] font-semibold leading-none tracking-wider uppercase whitespace-nowrap text-white/10 sm:text-white/5">
           RK INLAY
         </span>
       </div>

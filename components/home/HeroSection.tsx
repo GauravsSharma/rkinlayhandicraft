@@ -46,19 +46,6 @@ export default function HeroSection() {
               arrow_forward
             </span>
           </Link>
-          <a
-            className="group inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-all duration-300"
-            href="https://wa.me/917351586553"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <span className="material-symbols-outlined text-[18px] text-secondary">
-              chat
-            </span>
-            <span className="font-label-md text-label-md uppercase tracking-wider">
-              WhatsApp Us
-            </span>
-          </a>
         </motion.div>
       </div>
 

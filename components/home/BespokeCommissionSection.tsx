@@ -31,12 +31,6 @@ export default function BespokeCommissionSection() {
               <span className="material-symbols-outlined text-[18px]">chat</span>
               Discuss on WhatsApp
             </a>
-            <Link
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm rounded-full bg-transparent text-on-primary border border-tertiary-fixed-dim hover:bg-surface-container-high hover:text-primary transition-all duration-300 font-label-md text-label-md uppercase tracking-wider"
-              href="/contact"
-            >
-              Schedule Atelier Consultation
-            </Link>
           </div>
         </FadeIn>
       </div>
